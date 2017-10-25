@@ -4,7 +4,7 @@ package require http
 package require tls
 
 set arch "x86_64"
-set base "psqlodbc-09.06.0500"
+set base "psqlodbc-10.00.0000"
 
 http::register https 443 [list ::tls::socket -ssl3 0 -ssl2 0 -tls1 1]
 
