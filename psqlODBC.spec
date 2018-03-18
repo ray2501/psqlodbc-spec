@@ -49,7 +49,6 @@ if [ -x %{_bindir}/odbcinst ] ; then
 [PostgreSQL]
 Description=PostgreSQL ODBC driver
 Driver=%{_libdir}/psqlodbcw.so
-Setup=%{_libdir}/psqlodbcw.so
 FileUsage=1
 EOD
       %{_bindir}/odbcinst -q -d -n PostgreSQL | grep '^\[PostgreSQL\]' >/dev/null || {
