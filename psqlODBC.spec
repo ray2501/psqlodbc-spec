@@ -9,7 +9,7 @@
 
 Name:          psqlODBC
 Summary:       ODBC Driver for PostgreSQL
-Version:       11.00.0000
+Version:       11.01.0000
 Release:       0
 License:       LGPL-2.1+
 Group:         Productivity/Databases/Tools
@@ -20,6 +20,7 @@ BuildRequires: autoconf
 BuildRequires: automake
 BuildRequires: openssl-devel
 BuildRequires: postgresql-devel
+BuildRequires: postgresql-server-devel
 BuildRequires: unixODBC-devel
 BuildRoot:     %{buildroot}
 Requires: unixODBC
