@@ -20,7 +20,7 @@ BuildRequires: autoconf
 BuildRequires: automake
 BuildRequires: openssl-devel
 BuildRequires: postgresql-devel
-BuildRequires: postgresql-server-devel
+#BuildRequires: postgresql-server-devel
 BuildRequires: unixODBC-devel
 BuildRoot:     %{buildroot}
 Requires: unixODBC
