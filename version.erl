@@ -1,4 +1,5 @@
 #!/usr/bin/env escript
+-mode(compile).
 -export([main/1]).
 
 main(_) ->
