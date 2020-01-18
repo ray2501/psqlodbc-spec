@@ -9,7 +9,7 @@
 
 Name:          psqlODBC
 Summary:       ODBC Driver for PostgreSQL
-Version:       12.00.0000
+Version:       12.01.0000
 Release:       0
 License:       LGPL-2.1+
 Group:         Productivity/Databases/Tools
