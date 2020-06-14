@@ -18,6 +18,7 @@ URL:           https://odbc.postgresql.org/
 PreReq:         /usr/bin/odbcinst
 BuildRequires: autoconf
 BuildRequires: automake
+BuildRequires: libtool
 BuildRequires: openssl-devel
 BuildRequires: postgresql-devel
 #BuildRequires: postgresql-server-devel
@@ -35,6 +36,7 @@ PostgreSQL database using ODBC.
 %setup -q -n %{tarname}-%{version}
 
 %build
+export CPPFLAGS="-I/usr/include/pgsql -I/usr/include/pgsql/internal"
 ./configure --prefix=%{directory} --libdir=%{directory}/%{_lib} --with-unixodbc --with-libpq
 make 
 
